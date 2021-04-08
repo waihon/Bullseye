@@ -27,7 +27,9 @@ struct ContentView: View {
         Text("100")
           .bold()
       }
-      Button(action: {}) {
+      Button(action: {
+        print("Hello, SwiftUI!")
+      }) {
         Text("Hit me")
       }
     }
