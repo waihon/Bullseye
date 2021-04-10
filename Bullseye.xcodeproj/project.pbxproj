@@ -33,6 +33,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F81E29B2621973300782BDD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC0B9E261F4472006C0768 /* BullseyeApp.swift */,
+				4FCC0BA2261F4477006C0768 /* Assets.xcassets */,
+				4FCC0BA7261F4477006C0768 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4F81E29C2621975200782BDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F81E29D2621975900782BDD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC0BA0261F4472006C0768 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		4FCC0B92261F4471006C0768 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +77,9 @@
 		4FCC0B9D261F4471006C0768 /* Bullseye */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC0B9E261F4472006C0768 /* BullseyeApp.swift */,
-				4FCC0BA0261F4472006C0768 /* ContentView.swift */,
-				4FCC0BA2261F4477006C0768 /* Assets.xcassets */,
-				4FCC0BA7261F4477006C0768 /* Info.plist */,
+				4F81E29D2621975900782BDD /* Views */,
+				4F81E29C2621975200782BDD /* Models */,
+				4F81E29B2621973300782BDD /* App */,
 				4FCC0BA4261F4477006C0768 /* Preview Content */,
 			);
 			path = Bullseye;
