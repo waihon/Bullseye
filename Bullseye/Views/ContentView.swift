@@ -28,19 +28,19 @@ struct ContentView: View {
       HStack {
         Text("1")
           .bold()
-        Slider(value: self.$sliderValue, in: 1.0...100.0)
+        Slider(value: $sliderValue, in: 1.0...100.0)
         Text("100")
           .bold()
       }
       Button(action: {
         print("Hello, SwiftUI!")
-        self.alertIsVisible = true
+        alertIsVisible = true
       }) {
         Text("Hit me")
       }
       .alert(isPresented: $alertIsVisible, content: {
-        let roundedValue = Int(self.sliderValue.rounded())
-        return Alert(title: Text("Hello there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(self.game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Awesome!")))
+        let roundedValue = Int(sliderValue.rounded())
+        return Alert(title: Text("Hello there!"), message: Text("The slider's value is \(roundedValue).\n" + "You scored \(game.points(sliderValue: roundedValue)) points this round."), dismissButton: .default(Text("Awesome!")))
       })
     }
   }
